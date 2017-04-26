@@ -1,0 +1,32 @@
+﻿<div class="row" style="padding-top:15px;">
+    <div class="col-md-12">
+        <h1>{{view.title}}</h1>
+    </div>
+</div>
+<div class="row" style="padding-top:15px;">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="table-responsive">
+            <table class="table table-bordered table-stripped">
+                <thead>
+                    <tr>
+                        <th class="text-center">Id</th>
+                        <th class="text-center">Nombre</th>
+                        <th class="text-center">Puesto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in view.items">
+                        <td>{{item.id}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.job}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <a href="#!/pagina1" class="btn btn-primary">Pagina 1</a>
+    </div>
+</div>

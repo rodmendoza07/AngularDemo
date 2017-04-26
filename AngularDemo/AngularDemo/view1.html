@@ -1,0 +1,29 @@
+﻿<div class="row" style="padding-top:15px;">
+    <div class="col-md-12">
+        <h1>{{view.title}}</h1>
+    </div>
+    <div class="col-md-4">
+        <p>Nombre:</p>
+        <input type="text" class="form-control" placeholder="Escribe el nombre" ng-model="view.nombre"/>
+    </div>
+    <div class="col-md-4" ng-show="view.nombre">
+        <p>Apellido paterno:</p>
+        <input type="text" class="form-control" placeholder="Escribe el a. paterno" ng-model="view.apaterno"/>
+    </div>
+    <div class="col-md-4" ng-show="view.apaterno">
+        <p>Apellido materno:</p>
+        <input type="text" class="form-control" placeholder="Escribe el a. paterno" ng-model="view.amaterno" />
+    </div>
+</div>
+<div class="row text-center" style="padding-top:15px;" ng-hide="view.nombre != null && view.apaterno != null && view.amaterno != null">
+    <div class="col-md-4 col-md-offset-4">
+        <h3>No hay nombre escrito</h3>
+    </div>
+</div>
+<div class="row" style="padding-top:15px;" ng-show="view.nombre != null && view.apaterno != null && view.amaterno != null">
+    <div class="col-md-12">
+        <h3>
+            El nombre completo es: {{view.nombre}}&nbsp;{{view.apaterno}}&nbsp;{{view.amaterno}}
+        </h3>
+    </div>
+</div>
