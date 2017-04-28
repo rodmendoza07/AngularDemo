@@ -32,6 +32,10 @@ angular.module('demoApp')
                     id: 6,
                     name: 'Leonardo',
                     job:'Web developer'
+                }, {
+                    id: 7,
+                    name: 'Rodrigo',
+                    job: 'Web developer'
                 }]
         };
     }
